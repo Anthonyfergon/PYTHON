@@ -1,0 +1,35 @@
+PYTHON_SHELL_COMMANDS
+
+conda update -n base conda 				## Actualiza conda y todas las librerias instaladas.
+conda update anaconda
+conda update qt pyqt spyder-kernels ipython ipykernel jupyter_client jupyter_core pyzmq  ## Update Spyder’s dependencies and environment
+conda update spyder
+spyder --reset  						## Restore Spyder’s config files to their defaults, which solves a huge variety of Spyder issues.
+spyder --debug-info verbose
+conda update jupyterlab
+conda list
+pip show <package_name>					## displays gral info regarding a library installed
+pip list -o								## displays all libraries installed in the enviroment
+conda activate <env_name>
+conda install spyder
+pip install -U spyder					## actualizar spyder
+spyder                                 	## run spyder
+<path-to-spark-bin>/spark-submit --version
+conda install spyder=5.3.3				## install an specific library_version
+pip install --upgrade <package_name>==0.12.2 or pip install <package_name>==2.0.1              ## install an specific library_version
+python -m pip install --upgrade pip    	##ejecutar cuando existen issues de compilacion con el comando pip
+jupyter --version
+cmd -version
+
+# Try installing Spyder into a new Conda environment 
+conda create -n spyder-env spyder -y
+conda activate spyder-env
+spyder
+
+### How to add a table of Contents in Jupyter:
+Lets install the nbextension:
+Go to anaconda a execute the following instruction:
+pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install
+https://www.youtube.com/watch?v=-6HmdijtWwk&t=0s
+https://www.youtube.com/watch?v=vjLJ3CH4Inw
+
